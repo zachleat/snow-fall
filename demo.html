@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<title></title>
+		<style>
+			body {
+				color: #fff;
+				background-color: #444;
+				height: 100vh;
+				margin: 0;
+				font-family: system-ui, sans-serif;
+			}
+			div {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				gap: .5em;
+			}
+		</style>
+		<script type="module" src="snow-fall.js"></script>
+	</head>
+	<body>
+		<main>
+			<snow-fall></snow-fall>
+			<div style="min-height: 100vh">
+				<p>Snow on Page</p>
+				<snow-fall style="--snow-fall-color: rebeccapurple;">
+					<div style="width: 300px; height: 300px; background-color: white; color: #222;">
+						<p>Snow on Element with custom color</p>
+					</div>
+				</snow-fall>
+			</div>
+		</main>
+	</body>
+</html>

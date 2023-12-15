@@ -1,0 +1,22 @@
+{
+  "name": "@zachleat/snow-fall",
+  "version": "1.0.0",
+  "description": "A web component to add snow to your web site (or to an element on your web site).",
+  "main": "snow-fall.js",
+  "scripts": {
+    "start": "npx http-server ."
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/zachleat/snow-fall/issues"
+  },
+  "author": {
+    "name": "Zach Leatherman",
+    "email": "zachleatherman@gmail.com",
+    "url": "https://zachleat.com/"
+  },
+  "homepage": "https://github.com/zachleat/snow-fall#readme"
+}
