@@ -11,9 +11,6 @@ class Snow extends HTMLElement {
 	generateCss(mode, count) {
 		let css = [];
 		css.push(`
-:host {
-	pointer-events: none;
-}
 :host([mode="element"]) {
 	display: block;
 	position: relative;
@@ -24,6 +21,13 @@ class Snow extends HTMLElement {
 	top: 0;
 	left: 0;
 	right: 0;
+}
+:host([mode="page"]),
+:host([mode="element"]) > * {
+	pointer-events: none;
+}
+:host([mode="element"]) ::slotted(*) {
+	pointer-events: all;
 }
 * {
 	position: absolute;
