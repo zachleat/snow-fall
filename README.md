@@ -22,6 +22,16 @@ Installable from npm:
 npm install @zachleat/snow-fall
 ```
 
+### Use with `<is-land>`
+
+This is best used with [`<is-land>`](https://www.zachleat.com/web/is-land/) to respect user preferences for reduced motion:
+
+```html
+<is-land on:media="(prefers-reduced-motion: no-preference)">
+	<snow-fall></snow-fall>
+</is-land>
+```
+
 ### Customization
 
 ```html
