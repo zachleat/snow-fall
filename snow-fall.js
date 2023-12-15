@@ -48,7 +48,7 @@ class Snow extends HTMLElement {
 
 		// Thank you @alphardex: https://codepen.io/alphardex/pen/dyPorwJ
 		for(let j = 1; j<= count; j++ ) {
-			let x = Snow.random(1, 90) * dimensions.width/100; // vw
+			let x = Snow.random(1, 100) * dimensions.width/100; // vw
 			let offset = Snow.random(-10, 10) * dimensions.width/100; // vw
 
 			let yoyo = Math.round(Snow.random(30, 100)); // % time
