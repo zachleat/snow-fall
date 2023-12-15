@@ -2,6 +2,7 @@
 
 A web component to add snow to your web site (or to an element on your web site). Based off of [this Codepen](https://codepen.io/alphardex/pen/dyPorwJ) from [`alphardex`](https://codepen.io/alphardex).
 
+* [Demo](https://zachleat.github.io/snow-fall/demo.html)
 * [Related blog post](https://www.zachleat.com/web/snow-fall/)
 
 ## Usage
