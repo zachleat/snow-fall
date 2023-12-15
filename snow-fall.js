@@ -11,6 +11,9 @@ class Snow extends HTMLElement {
 	generateCss(mode, count) {
 		let css = [];
 		css.push(`
+:host {
+	pointer-events: none;
+}
 :host([mode="element"]) {
 	display: block;
 	position: relative;
@@ -23,7 +26,6 @@ class Snow extends HTMLElement {
 	right: 0;
 }
 * {
-	pointer-events: none;
 	position: absolute;
 	width: 10px;
 	height: 10px;
