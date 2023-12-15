@@ -51,7 +51,6 @@ This is best used with [`<is-land>`](https://www.zachleat.com/web/is-land/) to r
 You probably don’t need this.
 
 ```html
-<!-- Force mode -->
 <snow-fall mode="page"></snow-fall>
 <snow-fall mode="element"></snow-fall>
 ```
