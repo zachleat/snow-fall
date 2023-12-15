@@ -16,6 +16,12 @@ A web component to add snow to your web site (or to an element on your web site)
 </snow-fall>
 ```
 
+Installable from npm:
+
+```
+npm install @zachleat/snow-fall
+```
+
 ### Customization
 
 ```html
