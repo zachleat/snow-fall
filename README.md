@@ -32,16 +32,26 @@ This is best used with [`<is-land>`](https://www.zachleat.com/web/is-land/) to r
 </is-land>
 ```
 
-### Customization
+### Change the snow color
 
 ```html
 <!-- Change snow color -->
 <snow-fall style="--snow-fall-color: rebeccapurple"></snow-fall>
+```
 
+### Change the number of snowflakes
+
+```html
+<!-- Change number of snowflakes (default: 100) -->
+<snow-fall count="200"></snow-fall>
+```
+
+### Force the rendering mode (page/element)
+
+You probably don’t need this.
+
+```html
 <!-- Force mode -->
 <snow-fall mode="page"></snow-fall>
 <snow-fall mode="element"></snow-fall>
-
-<!-- Change number of snowflakes (default: 100) -->
-<snow-fall count="200"></snow-fall>
 ```
