@@ -6,6 +6,7 @@ class Snow extends HTMLElement {
 	static attrs = {
 		count: "count", // default: 100
 		mode: "mode",
+		text: "text", // text in snow flake (emoji, too)
 	}
 
 	generateCss(mode, count) {
@@ -31,6 +32,11 @@ class Snow extends HTMLElement {
 }
 * {
 	position: absolute;
+}
+:host([text]) * {
+	font-size: var(--snow-fall-size, 1em);
+}
+:host(:not([text])) * {
 	width: var(--snow-fall-size, 10px);
 	height: var(--snow-fall-size, 10px);
 	background: var(--snow-fall-color, rgba(255,255,255,.5));
@@ -106,8 +112,10 @@ class Snow extends HTMLElement {
 		shadowroot.adoptedStyleSheets = [sheet];
 
 		let d = document.createElement("div");
+		let text = this.getAttribute(Snow.attrs.text);
+		d.innerText = text || "";
 		for(let j = 0, k = count; j<k; j++) {
-			shadowroot.appendChild(d.cloneNode());
+			shadowroot.appendChild(d.cloneNode(true));
 		}
 
 		shadowroot.appendChild(document.createElement("slot"));
