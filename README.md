@@ -25,6 +25,16 @@ Installable from npm:
 npm install @zachleat/snow-fall
 ```
 
+### Use text content instead
+
+_Added in v1.0.3_
+
+```html
+<snow-fall text="❄️"></snow-fall>
+<!-- works with --snow-fall-size too -->
+```
+
+
 ### Use with `<is-land>`
 
 This is best used with [`<is-land>`](https://www.zachleat.com/web/is-land/) to respect user preferences for reduced motion:
