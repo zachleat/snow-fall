@@ -1,6 +1,6 @@
 {
   "name": "@zachleat/snow-fall",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A web component to add snow to your web site (or to an element on your web site).",
   "main": "snow-fall.js",
   "scripts": {
