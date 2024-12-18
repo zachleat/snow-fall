@@ -119,6 +119,10 @@ class Snow extends HTMLElement {
 		}
 
 		shadowroot.appendChild(document.createElement("slot"));
+
+		addEventListener("resize", (event) => {
+      			sheet.replaceSync(this.generateCss(mode, count));
+    		});
 	}
 }
 
